@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOTA DO HIMALAIA</title>
+    <link rel="icon" href="produto-imagem.png" type="image/png">
+    <meta name="description" content="Descubra como nosso produto pode transformar sua vida. Assista ao vídeo!">
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="style.css">
+    <!-- SEO: Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="URL_DO_SEU_SITE">
+    <meta property="og:title" content="Sua Oferta Imperdível!">
+    <meta property="og:description" content="Descubra como nosso produto pode transformar sua vida. Assista ao vídeo!">
+    <meta property="og:image" content="URL_DA_IMAGEM_PREVIEW_DO_VIDEO">
+    <!-- SEO: Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="URL_DO_SEU_SITE">
+    <meta property="twitter:title" content="Sua Oferta Imperdível!">
+    <meta property="twitter:description" content="Descubra como nosso produto pode transformar sua vida. Assista ao vídeo!">
+    <meta property="twitter:image" content="URL_DA_IMAGEM_PREVIEW_DO_VIDEO">
+</head>
+<body>
+    <!-- Header -->
+    <header class="container-fluid text-center py-3">
+        <h1>EREÇÕES FRACAS E FALTA DE DESEJO? <br>NUNCA MAIS.</h1>
+        <p class="lead">DESCUBRA A FÓRMULA QUE ESTÁ MUDANDO VIDAS. ESTOQUE ILIMITADO.</p>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="container my-4">
+        <!-- Imagem do Produto -->
+        <section id="product-image-section" class="text-center mb-4">
+            <img src="produto-imagem.png" alt="Gota do Himalaia - Produto Principal" class="img-fluid product-image">
+        </section>
+
+        <!-- Conteúdo Principal (Vídeo) -->
+        <section id="video-section" class="text-center">
+            <h2>Assista Agora e Transforme Sua Realidade!</h2>
+            <!-- Contêiner para o vídeo do Vimeo -->
+            <div class="vimeo-video-display mx-auto">
+                <div style="padding:56.25% 0 0 0;position:relative;">
+                    <iframe src="https://player.vimeo.com/video/1091309107?h=d951c822ef&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;controls=0&amp;portrait=0&amp;byline=0&amp;title=0&amp;playsinline=1&amp;background=1" 
+                            frameborder="0" 
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" 
+                            allowfullscreen 
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                            title="EREÇÃO FRACA NUNCA MAIS"
+                            id="vimeo-player">
+                    </iframe>
+                </div>
+                <button id="sound-toggle" class="sound-toggle-btn">
+                    <span class="sound-icon">🔇</span>
+                    <span class="sound-text">Ativar Som</span>
+                </button>
+                <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+        </section>
+
+        <!-- Temporizador de Escassez -->
+        <section id="timer-section" class="text-center my-4">
+            <h3>⏳ A OFERTA TERMINA EM: ⏳</h3>
+            <div id="countdown-timer" class="display-4">
+                <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+            </div>
+            <p>Não perca essa oportunidade exclusiva com desconto especial!</p>
+        </section>
+
+        <!-- Footer (Botões de Compra) -->
+        <footer id="cta-section" class="container text-center py-3">
+            <h2>ESCOLHA AGORA MESMO</h2>
+            <p>E APROVEITE OS DESCONTOS PROGRESSIVOS.</p>
+            <div class="row justify-content-center align-items-stretch">
+                <!-- Botão High Ticket - 10 Frascos -->
+                <div class="col-md-4 my-2 d-flex">
+                    <a href="https://checkout.perfectpay.com.br/pay/PPU38CLH4C5?src=adv" class="btn btn-purchase btn-lg btn-block d-flex flex-column align-items-center justify-content-center" data-product="10 Frascos" aria-label="Comprar 10 Frascos do Gota do Himalaia com Desconto">
+                        <img src="produto-imagem.png" alt="Gota do Himalaia" class="img-fluid product-thumb-button mb-2">
+                        COMPRAR 10 FRASCOS<br><span class="installment-price">12x de R$ 72,38</span><br><small>SUPER OFERTA!</small>
+                    </a>
+                </div>
+                <!-- Botão Medium Ticket - 3 Frascos -->
+                <div class="col-md-4 my-2 d-flex">
+                    <a href="https://checkout.perfectpay.com.br/pay/PPU38CLH4BN?src=adv" class="btn btn-purchase btn-lg btn-block d-flex flex-column align-items-center justify-content-center" data-product="3 Frascos" aria-label="Comprar 3 Frascos do Gota do Himalaia com Bônus">
+                        <img src="produto-imagem.png" alt="Gota do Himalaia" class="img-fluid product-thumb-button mb-2">
+                        COMPRAR 3 FRASCOS<br><span class="installment-price">12x de R$ 37,64</span><br><small>MAIS POPULAR!</small>
+                    </a>
+                </div>
+                <!-- Botão Low Ticket - 1 Frasco -->
+                <div class="col-md-4 my-2 d-flex">
+                    <a href="https://checkout.perfectpay.com.br/pay/PPU38CLH45H?src=adv" class="btn btn-purchase btn-lg btn-block d-flex flex-column align-items-center justify-content-center" data-product="1 Frasco" aria-label="Comprar 1 Frasco do Gota do Himalaia">
+                        <img src="produto-imagem.png" alt="Gota do Himalaia" class="img-fluid product-thumb-button mb-2">
+                        COMPRAR 1 FRASCO<br><span class="installment-price">12x de R$ 23,08</span><br><small>EXPERIMENTE!</small>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <footer class="text-center py-4" style="background-color: #0a0a0a; color: #777;">
+        <div class="container">
+            <p>&copy; 2024 Gota do Himalaia. Todos os direitos reservados.</p>
+            <p>
+                <a href="termos-de-uso.html" class="text-white-50">Termos de Uso</a> | 
+                <a href="politica-de-privacidade.html" class="text-white-50">Política de Privacidade</a>
+            </p>
+            <p class="small mt-3">Este produto não se destina a diagnosticar, tratar, curar ou prevenir qualquer doença. Os resultados podem variar de pessoa para pessoa.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- jQuery e Popper.js (necessários para o Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" defer></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
+    <!-- Script Personalizado -->
+    <script src="script.js" defer></script>
+
+    <!-- Exemplo de Pixel de Rastreamento (substitua pelo seu) -->
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'SEU_PIXEL_ID');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=SEU_PIXEL_ID&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Preload de recursos críticos -->
+    <link rel="preload" href="produto-imagem.png" as="image">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" as="style">
+</body>
+</html> 
