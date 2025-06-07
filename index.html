@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
     <title>GOTA DO HIMALAIA</title>
-    <link rel="icon" href="produto-imagem.png" type="image/png">
+    <link rel="icon" href="assets/img/produto-imagem.png" type="image/png">
     <meta name="description" content="Descubra como nosso produto pode transformar sua vida. Assista ao vídeo!">
     <!-- Google Fonts: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +19,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- CSS Personalizado -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <!-- SEO: Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="URL_DO_SEU_SITE">
@@ -80,9 +86,9 @@
             <div class="row justify-content-center align-items-stretch">
                 <!-- Botão High Ticket - 10 Frascos -->
                 <div class="col-md-4 my-2 d-flex">
-                    <a href="https://checkout.perfectpay.com.br/pay/PPU38CLH4C5?src=adv" class="btn btn-purchase btn-lg btn-block d-flex flex-column align-items-center justify-content-center" data-product="10 Frascos" aria-label="Comprar 10 Frascos do Gota do Himalaia com Desconto">
+                    <a href="https://checkout.perfectpay.com.br/pay/PPU38CLH4BQ?src=PV_Produtor" class="btn btn-purchase btn-lg btn-block d-flex flex-column align-items-center justify-content-center" data-product="10 Frascos" aria-label="Comprar 10 Frascos do Gota do Himalaia com Desconto">
                         <img src="produto-imagem.png" alt="Gota do Himalaia" class="img-fluid product-thumb-button mb-2">
-                        COMPRAR 10 FRASCOS<br><span class="installment-price">12x de R$ 72,38</span><br><small>SUPER OFERTA!</small>
+                        COMPRAR 5 FRASCOS<br><span class="installment-price">12x de R$ 42,56</span><br><small>SUPER OFERTA!</small>
                     </a>
                 </div>
                 <!-- Botão Medium Ticket - 3 Frascos -->
@@ -121,7 +127,7 @@
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
     <!-- Script Personalizado -->
-    <script src="script.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
 
     <!-- Exemplo de Pixel de Rastreamento (substitua pelo seu) -->
     <!-- Facebook Pixel Code -->
@@ -144,7 +150,23 @@
     <!-- End Facebook Pixel Code -->
 
     <!-- Preload de recursos críticos -->
-    <link rel="preload" href="produto-imagem.png" as="image">
+    <link rel="preload" href="assets/img/produto-imagem.png" as="image">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" as="style">
+
+    <!-- Scripts -->
+    <script>
+        // Registro do Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('Service Worker registrado com sucesso:', registration.scope);
+                    })
+                    .catch(error => {
+                        console.log('Falha ao registrar o Service Worker:', error);
+                    });
+            });
+        }
+    </script>
 </body>
 </html> 

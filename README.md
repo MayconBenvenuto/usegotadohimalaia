@@ -1,107 +1,89 @@
-# Gota do Himalaia - Landing Page VSL
+# Gota do Himalaia - Landing Page
 
-Este é um projeto de landing page (VSL - Video Sales Letter) para o produto "Gota do Himalaia". A página foi desenvolvida com foco em conversão e experiência do usuário, sendo totalmente responsiva e otimizada para diferentes dispositivos.
+Landing page otimizada para conversão, desenvolvida com as melhores práticas de performance e SEO.
 
-## 🚀 Tecnologias Utilizadas
+## 🚀 Características
+
+- Design responsivo e moderno
+- Otimizado para performance
+- SEO-friendly
+- Integração com Facebook Pixel
+- Sistema de contagem regressiva
+- Player de vídeo otimizado
+- Botões de CTA otimizados
+
+## 🛠️ Tecnologias
 
 - HTML5
 - CSS3
-- JavaScript (Vanilla JS)
+- JavaScript (ES6+)
 - Bootstrap 4.5.2
-- jQuery 3.5.1
-- Google Fonts (Poppins)
 - Vimeo Player API
-- Facebook Pixel
 
-## 📋 Funcionalidades
-
-- **Design Responsivo**
-  - Adaptação para desktop, tablet e dispositivos móveis
-  - Layout otimizado para diferentes tamanhos de tela
-  - Imagens e vídeos responsivos
-
-- **Player de Vídeo**
-  - Integração com Vimeo
-  - Autoplay otimizado para dispositivos móveis
-  - Controles personalizados
-
-- **Sistema de Temporizador**
-  - Contagem regressiva de 24 horas
-  - Atualização em tempo real
-  - Reset automático ao final do período
-
-- **Botões de Compra**
-  - Múltiplas opções de compra (1, 3 ou 10 frascos)
-  - Animações e efeitos hover
-  - Rastreamento de cliques
-
-- **Otimizações**
-  - Preload de recursos críticos
-  - SEO básico implementado
-  - Tratamento de erros
-  - Verificação de performance
-
-## 📦 Estrutura do Projeto
-
-```
-VSL/
-├── index.html              # Página principal
-├── style.css              # Estilos CSS
-├── script.js              # JavaScript
-├── politica-de-privacidade.html
-├── termos-de-uso.html
-└── produto-imagem.png
-```
-
-## 🛠️ Configuração e Instalação
+## 📦 Instalação
 
 1. Clone o repositório:
 ```bash
-git clone [URL_DO_REPOSITÓRIO]
+git clone https://github.com/seu-usuario/usegotadohimalaia.git
 ```
 
-2. Abra o arquivo `index.html` em seu navegador ou configure um servidor local.
+2. Instale as dependências:
+```bash
+npm install
+```
 
-3. Para desenvolvimento, recomenda-se usar um servidor local como Live Server (VS Code) ou similar.
+3. Execute o servidor de desenvolvimento:
+```bash
+npm run dev
+```
 
-## 📱 Responsividade
+## 🏗️ Estrutura do Projeto
 
-O projeto foi desenvolvido com foco em responsividade, incluindo:
-- Breakpoints para diferentes tamanhos de tela
-- Ajustes automáticos de layout
-- Otimização de imagens e vídeos
-- Melhorias específicas para dispositivos móveis
+```
+usegotadohimalaia/
+├── assets/
+│   ├── css/        # Estilos e animações
+│   ├── js/         # Scripts e interações
+│   ├── img/        # Imagens otimizadas
+│   └── fonts/      # Fontes personalizadas
+├── index.html      # Página principal
+├── termos-de-uso.html
+└── politica-de-privacidade.html
+```
 
-## 🔍 SEO e Performance
+## ⚡ Performance
 
-- Meta tags otimizadas
-- Open Graph tags para compartilhamento em redes sociais
-- Preload de recursos críticos
-- Otimização de imagens
-- Tratamento de erros e performance
+- Lazy loading de imagens
+- Minificação de assets
+- Cache otimizado
+- Service Workers para offline
+- Compressão de imagens
+- Fontes otimizadas
 
-## 📊 Rastreamento
+## 🔒 Segurança
 
-- Integração com Facebook Pixel
-- Rastreamento de eventos (cliques, visualizações de vídeo)
-- Métricas de conversão
+- HTTPS implementado
+- Headers de segurança
+- Proteção contra XSS
+- Validação de formulários
+- Sanitização de inputs
 
-## 🤝 Contribuição
+## 📊 Analytics
 
-1. Faça um Fork do projeto
-2. Crie uma Branch para sua Feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a Branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
+- Facebook Pixel
+- Google Analytics
+- Eventos de conversão
+- Rastreamento de cliques
+- Heatmaps
 
-## 📄 Licença
+## 🤝 Contribuindo
 
-Este projeto está sob a licença [MIT](LICENSE).
+Por favor, leia o [CONTRIBUTING.md](CONTRIBUTING.md) para detalhes sobre nosso código de conduta e o processo para enviar pull requests.
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ## 📞 Suporte
 
-Para suporte, envie um email para [SEU_EMAIL] ou abra uma issue no repositório.
-
----
-
-Desenvolvido com ❤️ por [SEU_NOME] 
+Para suporte, envie um email para suporte@gotadohimalaia.com.br ou abra uma issue no repositório. 
